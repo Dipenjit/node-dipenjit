@@ -1,0 +1,22 @@
+<html>
+  <title>My Node App - <%= pageName %></title>
+
+  <body>
+    <h1>Hi there I am being rendered from ejs and express. :)</h1>
+
+    <ul>
+      <% numbers.forEach(num => { %>
+        <li><%= num %></li>
+      <% }) %>
+    </ul>
+
+    <form action="/controller1/login" method="POST">
+      <input placeholder="Email" type="email" name="email">
+      <br>
+      <input placeholder="Password" type="password" name="password">
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
